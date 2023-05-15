@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="Services.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Travels</title>
+        <style>
+            .background{
+                background: url(Images/pexels-roberto-nickson-2559941.jpg) no-repeat;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="background">
+        <header>
+            <div class="row">
+                <h2>TRAVELSTER</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">Aboutus</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="Feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="service">
+                <a href="#flights">
+                <div class="cols4">
+                    <i class="fa fa-plane" aria-hidden="true"></i><br/>
+                    Flights &#8594;
+                </div></a>
+
+                <a href="#cars">
+                <div class="cols4">
+                    <i class="fa fa-car" aria-hidden="true"></i><br/>
+                    Cars &#8594;
+                </div></a>
+
+                <a href="#hotels">
+                <div class="cols4">
+                    <i class="fa fa-bed" aria-hidden="true"></i><br/>
+                    Hotels &#8594;
+                </div></a>
+
+                <a href="#trips">
+                    <div class="cols4">
+                        <i class="fa fa-globe" aria-hidden="true"></i><br/>
+                        Trips &#8594;
+                    </div></a>
+
+            </div>
+
+            <div id="flights">
+                <form>
+                    <h4 class="title">Flights</h4>
+                    <div class="Trip">
+                        <input type="radio" name="Trip" class="Trips">Roundtrip
+                        <input type="radio" name="Trip" class="Trips">One way
+                        <input type="radio" name="Trip" class="Trips">Multi-city
+                    </div>
+
+                    <div>
+                        <h5>From</h5>
+                        <input type="text" placeholder="India(IND)" class="text-area">
+                        <p class="checkbox"><input type="checkbox" style="margin-right: 10px; cursor: pointer;">Add nearby airports</p>
+                    </div>
+
+                    <div>
+                        <h5>To</h5>
+                        <input type="text" placeholder="Country, city or airport" class="text-area">
+                        <p class="checkbox"><input type="checkbox" style="margin-right: 10px; cursor: pointer;">Add nearby airports</p>
+                    </div>
+
+                    <div>
+                        <div>
+                            <h5>Depart</h5>
+                            <input type="date" class="text-area">
+                        </div>
+                        <div>
+                            <h5>Return</h5>
+                            <input type="date" class="text-area">
+                        </div>
+                    </div>
+
+                    <div>
+                        <h5>Cabin Class & Travelers</h5>
+                        <input type="number" class="text-area" placeholder="No.of passengers">
+                        <p class="checkbox"><input type="checkbox" style="margin-right: 10px; cursor: pointer;">Non-stop flights only</p>
+                    </div>
+
+                    <div class="Searchflights">
+                        <input type="submit"  class="Search-button" name="submit" value="Search &#10137;">
+                    </div><br/><br/>
+                </form>
+            </div>
+            
+            <div id="cars">
+                <form>
+                    <h4 class="title">Car Rentals</h4>
+                    <div>
+                        <h5>Pick-up Location</h5>
+                        <input type="text" placeholder="City, airport or station" class="text-area">
+                        <p class="checkbox"><input type="checkbox" style="margin-right: 10px; cursor: pointer;">Return car to a different location</p>
+                    </div>
+
+                    <div>
+                        <div>
+                            <h5>Pickup Date</h5>
+                            <input type="date" class="text-area">
+                            <input type="time" class="text-area">
+                        </div>
+                        <div>
+                            <h5>Return Date</h5>
+                            <input type="date" class="text-area">
+                            <input type="time" class="text-area">
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="checkbox"><input type="checkbox" style="margin-right: 10px; cursor: pointer;">Driver aged between 21-75</p>
+                    </div>
+
+                    <div class="Searchflights">
+                        <input type="submit"  class="Search-button" name="submit" value="Search &#10137;">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+            <div id="hotels">
+                <div class="r2">
+                <div class="column">
+                <form>
+                    <h4 class="titles">Hotels</h4>
+                    <div>
+                        <input type="text" placeholder="Enter hotel name" class="text-area">
+                    </div>
+
+                    <div>
+                        <div>
+                            <h5 style="font-size: 20px;">Check-in</h5>
+                            <input type="date" class="text-area">
+                            <input type="time" class="text-area">
+                        </div>
+                        <div>
+                            <h5 style="font-size: 20px;">Check-out</h5>
+                            <input type="date" class="text-area">
+                            <input type="time" class="text-area">
+                        </div>
+                    </div>
+
+                    <div>
+                        <input type="number" class="text-area" placeholder="Guests" style="width: 100px;">
+                        <input type="number" class="text-area" placeholder="Rooms" style="width: 100px;">
+                    </div>
+
+                    <div class="Searchflights">
+                        <input type="submit"  class="Search-button" name="submit" value="Search &#10137;">
+                    </div>
+                </form>
+                </div>
+
+                <div class="column hotel-background">
+                    <h3>Save on your next</h3>
+                    <h3>stay</h3>
+                    <h5>Our top hotel deals</h5>
+                    <a href="#Search-hotels"><input type="submit"  class="Search-button" name="submit" value="Explore &#10137;" style="margin-top: 30px;"></a>
+                </div>
+                </div>
+
+                <div id="Search-hotels">
+                    <h2 style="text-align: center;">Plan your next staycation</h2>
+                    <h4 class="title">Las Vegas</h4>
+                    <div class="row3">
+                        <div class="rows">
+                            <img src="Images/hotel1.jpg" alt="Oops!">
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Las Vegas, United States</p>
+                            <h5>Vdara Hotel & Spa at Aria Las Vegas</h5>
+                            <p><i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i></p>
+                                <p><b>$399 </b> Per night</p>
+                        </div>
+                        <div class="rows">
+                            <img src="Images/hotel2.jpg" alt="Oops!">
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Las Vegas, United States</p>
+                            <h5>Trump International Hotel Las Vegas</h5>
+                            <p><i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <p><b>$192 </b> Per night</p>
+                        </div>
+                        <div class="rows">
+                            <img src="Images/hotel3.jpg" alt="Oops!">
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Las Vegas, United States</p>
+                            <h5>The Cromwell Hotel & Casino</h5>
+                            <p><i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <p><b>$253 </b> Per night</p>
+                        </div>
+                    </div>
+
+                    <h4 class="title">New York</h4>
+                    <div class="row3">
+                        <div class="rows">
+                            <img src="Images/hotel4.jpg" alt="Oops!">
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> New York, United States</p>
+                            <h5>Hotel Riu Plaza New York Times Square</h5>
+                            <p><i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i></p>
+                                <p><b>$260 </b> Per night</p>
+                        </div>
+                        <div class="rows">
+                            <img src="Images/hotel5.jpg" alt="Oops!">
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> New York, United States</p>
+                            <h5>The Benjamin Royal Sonesta New York</h5>
+                            <p><i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <p><b>$364 </b> Per night</p>
+                        </div>
+                        <div class="rows">
+                            <img src="Images/hotel6.jpg" alt="Oops!">
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> New York, United States</p>
+                            <h5>Club Quarters Hotel Grand Central New York</h5>
+                            <p><i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <p><b>$249 </b> Per night</p>
+                        </div>
+                    </div>
+
+                    <h4 class="title">Oriando</h4>
+                    <div class="row3">
+                        <div class="rows">
+                            <img src="Images/hotel7.jpg" alt="Oops!">
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Oriando, United States</p>
+                            <h5>Hilton Grand Vacations Club Tuscany Village Oriando</h5>
+                            <p><i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                                <p><b>$190 </b> Per night</p>
+                        </div>
+                        <div class="rows">
+                            <img src="Images/hotel8.jpg" alt="Oops!">
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Oriando, United States</p>
+                            <h5>The Fullerton Hotel Hotel-UFC Area</h5>
+                            <p><i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <p><b>$126 </b> Per night</p>
+                        </div>
+                        <div class="rows">
+                            <img src="Images/hotel9.jpg" alt="Oops!">
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Oriando, United States</p>
+                            <h5>Hampton Inn Closest to Universal Orlando</h5>
+                            <p><i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <p><b>$96 </b> Per night</p>
+                        </div>
+                    </div>
+
+                    <h4 class="title">Miami</h4>
+                    <div class="row3">
+                        <div class="rows">
+                            <img src="Images/hotel10.jpg" alt="Oops!">
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Miami, United States</p>
+                            <h5>InterContinental Miami, an IHG Hotel</h5>
+                            <p><i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i></p>
+                                <p><b>$158 </b> Per night</p>
+                        </div>
+                        <div class="rows">
+                            <img src="Images/hotel11.jpg" alt="Oops!">
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Miami, United States</p>
+                            <h5>Kimpton Epic Hotel, an IHG Hotel</h5>
+                            <p><i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <p><b>$181 </b> Per night</p>
+                        </div>
+                        <div class="rows">
+                            <img src="Images/hotel12.jpg" alt="Oops!">
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Miami, United States</p>
+                            <h5>Novotel Miami Brickell</h5>
+                            <p><i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <p><b>$141 </b> Per night</p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+            <div id="trips">
+                <h2 style="text-align: center">Travel: The Top Places In The World</h2>
+                <div class="row3">
+                    <div class="columns">
+                        <img src="Images/Tajmahal.jpg" alt="Oops!">
+                        <h5>Taj Mahal, India - Tradition is Deep but Extremely Astonishing</h5>
+                        <p>India Top Destinations: Agra The memorial has inspired millions of tourists to make the trip to Agra each year.
+                        </p>
+                        <input type="submit"  class="Search-button" name="submit" value="Read &#10137;" style="margin-top: 30px;">
+                    </div>
+                    <div class="columns">
+                        <img src="Images/Statueofliberty.jpg" alt="Oops!">
+                        <h5>New York, United  States - The city which Never Sleeps</h5>
+                        <p>A city that forever awakens and observes an influx of people throughout the year,
+                             you will be thoroughly awed by the skyscrapers in the city.
+                        </p>
+                        <input type="submit"  class="Search-button" name="submit" value="Read &#10137;" style="margin-top: 30px;">
+                    </div>
+                    <div class="columns">
+                        <img src="Images/Effiel1.jpg" alt="Oops!">
+                        <h5>Paris, France – Most Visited City in the World</h5>
+                        <p>Eiffel Tower: Built by Gustave Eiffel What would Paris be without its iconic Eiffel Tower? Built by Gustave Eiffel to
+                        </p>
+                        <input type="submit"  class="Search-button" name="submit" value="Read &#10137;" style="margin-top: 30px;">
+                    </div>
+                </div>
+
+                <div class="row3">
+                    <div class="columns">
+                        <img src="Images/Cappadocia.jpeg" alt="Oops!">
+                        <h5>Cappadocia, Turkey- Most Magical Place on Earth</h5>
+                        <p>The Most Magical Place on Earth This location is picturesque and full of magic, words are not enough to describe.
+                        </p>
+                        <input type="submit"  class="Search-button" name="submit" value="Read &#10137;" style="margin-top: 30px;">
+                    </div>
+                    <div class="columns">
+                        <img src="Images/Bangkok.jpg" alt="Oops!">
+                        <h5>Bangkok, Thailand</h5>
+                        <p>Centuries-old temples Bangkok is everything you’d expect from Thailand’s capital:it’s loud, crowded, colourful, exciting, furious and simply magical.
+                        </p>
+                        <input type="submit"  class="Search-button" name="submit" value="Read &#10137;" style="margin-top: 30px;">
+                    </div>
+                    <div class="columns">
+                        <img src="Images/Greatbarrierreef.webp" alt="Oops!">
+                        <h5>Great Barrier Reef, Australia - Great Natural Wonder</h5>
+                        <p>One of the most remarkable Australian natural gifts is the Great Barrier Reef. This place
+                            is blessed with the breathtaking beauty of the world's largest coral reef.
+                        </p>
+                        <input type="submit"  class="Search-button" name="submit" value="Read &#10137;" style="margin-top: 30px;">
+                    </div>   
+                </div>
+
+                <div class="row3">
+                    <div class="columns">
+                        <img src="Images/Machupicchu.jpg" alt="Oops!">
+                        <h5>Manchu Picchu, Peru - The Sun Gate</h5>
+                        <p>Huayna Picchu is a mountain in Peru,the so-called
+                        Lost City of Incas. The hills here proffer
+                        one of the most marvelous views of the main square of Machu Picchu, with the sun in the backdrop.
+                        </p>
+                        <input type="submit"  class="Search-button" name="submit" value="Read &#10137;" style="margin-top: 30px;">
+                    </div>
+                    <div class="columns">
+                        <img src="Images/Boraboraisland.cms" alt="Oops!">
+                        <h5>Bora Bora Island</h5>
+                        <p>This south pacific island is regarded as the center of the romantic universe
+                            with white sand beaches, blue water, tropical colored fish, beautiful coral gardens and luxurious resorts & spas.
+                        </p>
+                        <input type="submit"  class="Search-button" name="submit" value="Read &#10137;" style="margin-top: 30px;">
+                    </div>
+                    <div class="columns">
+                        <img src="Images/Museum4.jpg" alt="Oops!">
+                        <h5>The Louvre Museum, France</h5>
+                        <p>The largest Museum on earth and is home to a vast collection of art and artifacts from all
+                            over the world.
+                        </p>
+                        <input type="submit"  class="Search-button" name="submit" value="Read &#10137;" style="margin-top: 30px;">
+                    </div>
+                </div>
+
+
+            </div>
+
+        </main>
+
+        
+
+        <footer>
+            <div class="four-container">
+                <div class="col4">
+                    <ul>
+                        <li style="font-size: 25px; padding: 10px;"><b>Explore</b></li>
+                        <li>Domestic Flights</li>
+                        <li>Cities</li>
+                        <li>Daily Flight Deals</li>
+                        <li>Airports</li>
+                        <li>Countries</li>
+                        <li>Airlines</li>
+                        <li>Hotel Deals</li>
+                        <li>Car rental</li>
+                        <li>App</li>
+                        <li>Sitemap</li>
+                    </ul>
+                </div>
+
+                <div class="col4">
+                    <ul>
+                        <li style="font-size: 25px; padding: 10px;"><b>Partners</b></li>
+                        <li>Work with us</li>
+                        <li>Advertise with us</li>
+                        <li>Travel Insight</li>
+                        <li>Affiliates</li>
+                        <li>Travel APIs</li>
+                    </ul>
+                </div>
+
+                <div class="col4">
+                    <ul>
+                        <li style="font-size: 25px; padding: 10px;"><b>Company</b></li>
+                        <li>About us</li>
+                        <li>Why Travelster?</li>
+                        <li>Media</li>
+                        <li>Our People</li>
+                        <li>Accessibility</li>
+                        <li>Jobs</li>
+                        <li>Cookie Policy</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of service</li>
+                        <li>Do not sell my Personal Information</li>
+                    </ul>
+                </div>
+
+                <div class="col4">
+                    <ul>
+                        <li style="font-size: 25px; padding: 10px;"><b>Help</b></li>
+                        <li>Help</li>
+                        <li>Privacy settings</li>
+                        <li>Security</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+         
+    </body>
+</html>

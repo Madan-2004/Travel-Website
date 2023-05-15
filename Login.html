@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Travels</title>
+
+<style>
+    form{
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .text-box{
+        background: rgb(66,64,64);
+        color: rgb(255,255,255);
+        border: none;
+        height: 30px;
+        padding: 12px;
+        font-size: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        opacity: 0.9;
+        }
+
+    .text-box:first-child{
+        margin-right: 15px;
+    }
+
+    .text-box:hover{
+        transform: translateY(-2px);
+    }
+
+    .box{
+        margin: 10px;
+    }
+
+    .row2{
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .col2{
+        flex-basis: 50%;
+        text-align: center;
+    }
+
+    .send-btn{
+        background: rgb(9,1,0);
+        color: rgb(255,255,255);
+        border: none;
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        float: right;
+        margin-right: 10px;
+    }
+
+    .send-btn:hover{
+        background-color: #ff523b;
+        transition: 1s ease-in-out;
+        transform: translateY(-2px);
+        cursor: pointer;
+    }
+
+    .reset{
+        background: rgb(9,1,0);
+        color: rgb(255,255,255);
+        border: none;
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        float: left;
+        margin-left: 10px;
+    }
+
+    .reset:hover{
+        background-color: #ff523b;
+        transition: 1s ease-in-out;
+        transform: translateY(-2px);
+    }
+
+    .background{
+        background: url(Images/pexels-roberto-nickson-2559941.jpg) no-repeat;
+        background-size: cover;
+    }
+
+
+</style>
+    </head>
+
+
+    <body>
+        <div class="background">
+        <header>
+            <div class="row">
+                <h2>TRAVELSTER</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">Aboutus</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="Feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+        <div id="feedack">
+            <div class="form">
+                <form class="info" action="" method="post">
+                    <h2 style="padding: 10px; font-size: 25px;">Login!</h2>
+                    <div class="box">
+                        <input type="text" class="text-box" name="name" placeholder="Username">
+                    </div>
+                    <div  class="box">
+                        <input type="text" class="text-box" name="email" placeholder="Email-Id">
+                    </div>
+                    <div class="box">
+                        <input type="password" class="text-box" name="password" placeholder="Password">
+                    </div>
+                    <div class="row2">
+                        <div class="col2">
+                            <input type="submit"  class="send-btn" name="submit" value="Login">
+                        </div>
+                        <div class="col2">
+                            <input type="reset"  class="reset" name="reset" value="Reset">
+                        </div>
+                    </div>
+                </form>
+            </div>        
+        </div>
+        </main>
+        </div>
+
+        <footer>
+            <div class="four-container">
+                <div class="col4">
+                    <ul>
+                        <li style="font-size: 25px; padding: 10px;"><b>Explore</b></li>
+                        <li>Domestic Flights</li>
+                        <li>Cities</li>
+                        <li>Daily Flight Deals</li>
+                        <li>Airports</li>
+                        <li>Countries</li>
+                        <li>Airlines</li>
+                        <li>Hotel Deals</li>
+                        <li>Car rental</li>
+                        <li>App</li>
+                        <li>Sitemap</li>
+                    </ul>
+                </div>
+
+                <div class="col4">
+                    <ul>
+                        <li style="font-size: 25px; padding: 10px;"><b>Partners</b></li>
+                        <li>Work with us</li>
+                        <li>Advertise with us</li>
+                        <li>Travel Insight</li>
+                        <li>Affiliates</li>
+                        <li>Travel APIs</li>
+                    </ul>
+                </div>
+
+                <div class="col4">
+                    <ul>
+                        <li style="font-size: 25px; padding: 10px;"><b>Company</b></li>
+                        <li>About us</li>
+                        <li>Why Travelster?</li>
+                        <li>Media</li>
+                        <li>Our People</li>
+                        <li>Accessibility</li>
+                        <li>Jobs</li>
+                        <li>Cookie Policy</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of service</li>
+                        <li>Do not sell my Personal Information</li>
+                    </ul>
+                </div>
+
+                <div class="col4">
+                    <ul>
+                        <li style="font-size: 25px; padding: 10px;"><b>Help</b></li>
+                        <li>Help</li>
+                        <li>Privacy settings</li>
+                        <li>Security</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

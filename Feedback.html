@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Travels</title>
+
+    <style>
+        body main{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-section{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-info{
+            color: rgb(255,255,255);
+            margin-left: 30px;
+            line-height: 65px;
+            font-size: 20px;
+        }
+
+        .contact-info i{
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        .contact-form{
+            max-width: 700px;
+            margin-right: 50px;
+        }
+
+        .contact-info, .contact-form{
+            flex: 1;
+        }
+
+        .contact-form h2{
+            color: rgb(43, 32, 32);
+            text-align: center;
+            font-size: 30px;
+            font-family: cursive;
+            margin-bottom: 30px;
+        }
+
+        .contact-form .text-box{
+            background: rgb(66,64,64);
+            color: rgb(255,255,255);
+            border: none;
+            height: 50px;
+            padding: 12px;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .contact-form .text-box:first-child{
+            margin-right: 15px;
+        }
+
+        .contact-form textarea{
+            background: rgb(66,64,64);
+            color: rgb(255,255,255);
+            border: none;
+            width: 100%;
+            padding: 12px;
+            font-size: 20px;
+            min-height: 200px;
+            max-height: 400px;
+            resize: vertical;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .contact-form .send-btn{
+            float: right;
+            background: rgb(9,1,0);
+            color: rgb(255,255,255);
+            border: none;
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form .send-btn:hover{
+            background-color: #ff523b;
+            transition: 1s ease-in-out;
+            transform: translateY(-2px);
+        }
+
+        .insta{
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(255,255,255);
+            cursor: pointer;
+        }  
+         
+        .contact-info img{
+            margin-right: 10px;
+        }
+
+        .background{
+            background: url(Images/pexels-roberto-nickson-2559941.jpg) no-repeat;
+            background-size: cover;
+        }
+
+        .insta:hover{
+            color: rgb(9,1,0);
+        }
+
+    </style>
+
+    </head>
+
+    <body>
+        <div class="background">
+        <header>
+            <div class="row">
+                <h2>TRAVELSTER</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">Aboutus</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="Feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <main>
+            <div class="contact-section">
+                <div class="contact-info">
+                    <div><i class="fa fa-envelope-open" aria-hidden="true"></i>travelster001@gmail.com</div>
+                    <div><i class="fa fa-phone" aria-hidden="true"></i>+91 90926 17017</div>
+                    <div class="insta"><img src="Images/instagram.png"/><a class="insta" href="https://www.instagram.com/" target="_blank"> @travelster</a></div>
+                    <div><a href="https://in.linkedin.com/" class="insta" target="_blank"><img src="Images/linkedin.png">Travelster001</a></div>
+                </div>
+                <div class="contact-form">
+                    <h2 style="font-family: Helvetica, sans-sherif; color: rgb(9,1,0);">CONTACT US</h2>
+                    <form class="contact" action="" method="post">
+                        <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+                        <input type="text" name="email" class="text-box" placeholder="Your Email" required>
+                        <textarea name="message" rows="5" placeholder="Feedback" required></textarea>
+                        <input type="submit" name="submit" class="send-btn" value="Send">
+                    </form>
+                </div>
+            </div>
+     
+        </main>
+        </div>
+
+        <footer>
+            <div class="four-container">
+                <div class="col4">
+                    <ul>
+                        <li style="font-size: 25px; padding: 10px;"><b>Explore</b></li>
+                        <li>Domestic Flights</li>
+                        <li>Cities</li>
+                        <li>Daily Flight Deals</li>
+                        <li>Airports</li>
+                        <li>Countries</li>
+                        <li>Airlines</li>
+                        <li>Hotel Deals</li>
+                        <li>Car rental</li>
+                        <li>App</li>
+                        <li>Sitemap</li>
+                    </ul>
+                </div>
+
+                <div class="col4">
+                    <ul>
+                        <li style="font-size: 25px; padding: 10px;"><b>Partners</b></li>
+                        <li>Work with us</li>
+                        <li>Advertise with us</li>
+                        <li>Travel Insight</li>
+                        <li>Affiliates</li>
+                        <li>Travel APIs</li>
+                    </ul>
+                </div>
+
+                <div class="col4">
+                    <ul>
+                        <li style="font-size: 25px; padding: 10px;"><b>Company</b></li>
+                        <li>About us</li>
+                        <li>Why Travelster?</li>
+                        <li>Media</li>
+                        <li>Our People</li>
+                        <li>Accessibility</li>
+                        <li>Jobs</li>
+                        <li>Cookie Policy</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of service</li>
+                        <li>Do not sell my Personal Information</li>
+                    </ul>
+                </div>
+
+                <div class="col4">
+                    <ul>
+                        <li style="font-size: 25px; padding: 10px;"><b>Help</b></li>
+                        <li>Help</li>
+                        <li>Privacy settings</li>
+                        <li>Security</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+         
+    </body>
+</html>
